@@ -1,4 +1,4 @@
-public class Rectangle {
+public class Rectangle extends Shape{
     private double a;
     private double b;
 
@@ -18,17 +18,20 @@ public class Rectangle {
         this.b = b;
     }
 
-    public Rectangle(double a, double b) {
+    public Rectangle(String color, double a, double b) {
+        super(color);
         this.a = a;
         this.b = b;
     }
 
-    public void showArea(){
+    public void showArea() {
         System.out.print("Pole prostokąta o bokach" + " " + a + ", " + b + " " + "wynosi" + " ");
     }
 
-    public void showPerimeter(){
+        public void showPerimeter(){
         System.out.print("Obwód prostokąta o bokach" + " " + a + ", " + b + " " + "wynosi" + " ");
     }
+
+
 
 }
